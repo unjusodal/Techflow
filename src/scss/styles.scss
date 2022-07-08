@@ -1,0 +1,79 @@
+@import 'fonts';
+@import 'header';
+@import 'achievments';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header, 
+section, 
+footer {
+    padding: 25px 50px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.title {
+    font-family: 'Poppins-Bold';
+}
+
+.subtitle {
+    font-family: 'Poppins-ExtraLight';
+    color: #80AB9E;
+    font-weight: lighter;
+}
+
+.wrapper {
+    max-width: 1300px;
+    margin-inline: auto;
+    padding-inline: 70px;
+}
+
+.button {
+    cursor: pointer;
+    font-family: 'Poppins-Bold';
+    letter-spacing: 0.08em;
+    height: 50px;
+    padding-inline: 15px;
+    background-color: transparent;
+    border: 1.5px solid #00E3A5;
+    border-radius: 5px;
+    color: #FFF;
+    transition: all 150ms ease;
+
+    &:hover {
+        background-color: #00E3A5;
+        color: #000;
+    }
+}
+
+@media (max-width: 1100px) {
+    header, 
+    section, 
+    footer {
+        padding: 25px 10px;
+    }
+
+    .wrapper {
+        padding-inline: 50px;
+    }
+}
+
+@media (max-width: 600px) {
+    header, 
+    section, 
+    footer {
+        padding: 25px 10px;
+    }
+
+    .wrapper {
+        padding-inline: 10px;
+    }
+}
