@@ -1,0 +1,218 @@
+@import 'variables';
+
+.footer {
+    color: $text-clr;
+    background-color: $accent-clr-2;
+}
+
+.footer__content {
+    background-image: url('assets/images/footer-bg.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 30px 0;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 200px 50px 1fr 50px;
+    align-items: center;
+    grid-gap: 40px;
+
+    div {
+        padding: 20px;
+    }
+}
+
+.footer__company {
+    grid-row: 1 / 3;
+    align-self: end;
+    width: 80%;
+
+    .title {
+        margin-bottom: 20px;
+        font-family: 'Poppins';
+    }
+
+    .text {
+        font-size: 0.9rem;
+    }
+}
+
+.footer__email {
+
+    .title {
+        margin-bottom: 30px;
+    }
+
+    form {
+        width: 100%;
+        height: 53px;
+        background-color: transparent;
+        border-radius: 5px;
+        border: 3px solid $accent-clr;
+
+    }
+
+    input {
+        height: 100%;
+        width: 70%;
+        border-radius: 5px;
+        border: none;
+        background-color: transparent;
+        padding-inline: 20px;
+        color: $light-clr;
+        font-family: 'Poppins-Bold';
+        letter-spacing: 0.08em;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .button {
+        background-color: $accent-clr;
+        color: #000;
+        border-radius: 0;
+        height: 100%;
+        width: 30%;
+        position: relative;
+        left: 1px;
+
+        &:hover {
+            background-color: darken($accent-clr, $amount: 20%);
+            border-color: darken($accent-clr, $amount: 20%);
+        }
+    }
+}
+
+.footer__social {
+    grid-column: 0 / 1;
+    grid-row: 3 / 4;
+
+    .social__logos {
+        padding: 15px 0 0 0;
+        
+        img {
+            margin-right: 15px;
+            height: 40px;
+            filter: invert(66%) sepia(28%) saturate(275%) hue-rotate(111deg) brightness(92%) contrast(89%);
+
+            &:hover {
+                filter: invert(64%) sepia(45%) saturate(1736%) hue-rotate(115deg) brightness(99%) contrast(101%);
+            }
+        }
+    }
+}
+
+.footer__info {
+    grid-column: 2 / 2;
+    grid-row: 2 / 5;
+    align-self: start;
+    display: flex;
+
+    div {
+        padding: 0;
+        width: 50%;
+
+        .title {
+            margin-bottom: 15px;
+        }
+
+        li {
+            list-style: none;
+            margin: 5px 0;
+
+            &:hover {
+                color: $accent-clr;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.footer__rights {
+    grid-row: 4 / 5;
+    grid-column: 0 / 1;
+    font-size: 0.8rem;
+
+    a:hover {
+        color: $accent-clr;
+    }
+}
+
+@media (max-width: 796px) {
+    .footer__content {
+        grid-gap: 20px;
+
+        div {
+            padding: 0;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .footer__content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer__company {
+        order: 1;
+        width: 100%;
+
+        .text {
+            padding-bottom: 30px;
+        }
+    }
+
+    .footer__email {
+        order: 2;
+        width: 100%;
+
+        .title {
+            margin-bottom: 10px;
+            text-align: left;
+        }
+
+        form {
+            input {
+                width: 60%;
+            }
+
+            .button {
+                width: 40%;
+            }
+        }
+    }
+
+    .footer__about {
+        order: 3;
+        flex-direction: column;
+        
+        div {
+            width: 100%;
+        }
+    }
+    .footer__info {
+        order: 3;
+        width: 100%;
+        margin: 20px 0;
+        flex-direction: column;
+        gap: 30px;
+        
+        div {
+            width: 100%;
+        }
+    }
+
+    .footer__social {
+        order: 4;
+        width: 100%;
+    }
+
+    .footer__rights {
+        order: 5;
+        width: 100%;
+    }
+}

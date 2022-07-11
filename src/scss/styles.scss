@@ -4,6 +4,7 @@
 @import 'partners';
 @import 'about';
 @import 'how-it-works';
+@import 'footer';
 
 * {
     margin: 0;
@@ -64,6 +65,10 @@ a {
         background-color: $accent-clr;
         color: #000;
     }
+}
+
+.disable-scroll {
+    overflow: hidden;
 }
 
 @media (max-width: 1100px) {

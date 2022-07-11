@@ -27,7 +27,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding: 50px 10% 50px;
+    padding: 40px 10% 40px;
     display: flex;
 
     &:nth-child(odd) {
@@ -135,7 +135,6 @@
 }
 
 @media (max-width: 796px) {
-
     .item__content {
         img {
             max-width: 100%;
@@ -182,12 +181,12 @@
 
         &:nth-child(odd) {
             padding-right: 10px;
-            padding-left: 20px;
+            padding-left: 30px;
         }
         
         &:nth-child(even) {
             padding-left: 10px;
-            padding-right: 20px;
+            padding-right: 30px;
         }
     }
 }

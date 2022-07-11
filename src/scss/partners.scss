@@ -26,7 +26,7 @@
 
             img {
                 filter: invert(11%) sepia(28%) saturate(907%) hue-rotate(114deg) brightness(30%) contrast(99%);
-                transition: filter 200ms ease-in-out;
+                transition: filter 150ms ease-in-out;
 
                 &:hover {
                     filter: invert(11%) sepia(28%) saturate(907%) hue-rotate(114deg) brightness(70%) contrast(99%);

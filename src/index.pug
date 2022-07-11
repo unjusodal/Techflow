@@ -68,11 +68,11 @@ html(lang="en")
                 .about-us__content.wrapper
                     .content__text
                         h2.title About us
-                        p 
-                            A Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printing and typesetting industry. 
-                        p
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                        p.
+                            We are building the cryptoeconomy – a more fair, accessible, efficient, and transparent financial system enabled by crypto. 
+                        p.
+                            We started in 2012 with the radical idea that anyone, anywhere, should be able to easily and securely send and receive Bitcoin. 
+                            Today, we offer a trusted and easy-to-use platform for accessing the broader cryptoeconomy.
                         button.button Learn More
             .content__image
                 img(src='assets/images/features.png', alt='Our pluses')
@@ -87,8 +87,8 @@ html(lang="en")
                             .txt
                                 h3.title Consulting
                                 p.text. 
-                                    A Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                    We are direct and succinct. We share information efficiently, improving collaboration and productivity. 
+                                    We practice active listening.
                         .content__icon
                             img(src='assets/images/how-it-works/glyph.svg', alt='Glyph')
                 .block__item    
@@ -99,8 +99,8 @@ html(lang="en")
                             .txt
                                 h3.title Research & Complaince
                                 p.text. 
-                                    A Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                    We are builders, leveraging technology to improve the world, constantly shipping ideas vs. just discussing them.
+                                     We have a high tolerance for failure, investing 10% of our resources in venture bets that are uncomfortably ambitious.
                         .content__icon
                             img(src='assets/images/how-it-works/chart.svg', alt='Charts')
                 .block__item
@@ -111,26 +111,57 @@ html(lang="en")
                             .txt
                                 h3.title Technology
                                 p.text. 
-                                    A Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                    The Techflow engine has unprecedented speed and reliability. We wrote it in kdb+, 
+                                    a database and toolset used frequently by major banks in high-frequency trading applications.
                         .content__icon
                             img(src='assets/images/how-it-works/technology.svg', alt='Technology')
             button.button Let's See More
-        section.reviews
-            .reviews__content
-                h2.title Our community with User reviews
-                .slider
+        //- section.reviews
+        //-     .reviews__content
+        //-         h2.title Our community with User reviews
+        //-         .slider
         footer.footer
-            .footer__about
-                h1.logo Techflow
-                p.text. 
-                    A Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-            .footer__social
-                h3.title Social Media
-            .footer__email
-                h2.title Newsletter
-                form
-                    input(type='text')
-                    button.button(type='submit') Submit
+            .footer__content.wrapper
+                .footer__company
+                    h2.title Techflow
+                    p.text. 
+                        We are building the cryptoeconomy – a more fair, accessible, 
+                        efficient, and transparent financial system enabled by crypto.
+                .footer__email
+                    h2.title Newsletter
+                    form
+                        input(type='text', placeholder='Email address')
+                        button.button(type='submit') Submit
+                .footer__social
+                    h3.title Social Media
+                    .social__logos
+                        a(href="https://www.facebook.com/" target='_blank') 
+                            img(src='assets/images/logos/facebook.svg', alt='facebook')
+                        a(href="https://www.twitter.com/" target='_blank') 
+                            img(src='assets/images/logos/twitter.svg', alt='twitter')
+                        a(href="https://www.instagram.com/" target='_blank') 
+                            img(src='assets/images/logos/instagram.svg', alt='instagram')
+                .footer__info
+                    .info__about
+                        h3.title About us
+                        ul
+                            li 
+                                a(href="#") Whitepaper
+                            li 
+                                a(href="#") Blog
+                            li 
+                                a(href="#") Activity
+                    .info__sup
+                        h3.title Support
+                        ul
+                            li 
+                                a(href="#") Help & Support
+                            li 
+                                a(href="#") Community
+                            li 
+                                a(href="https://github.com/unjusodal" target='_blank') Author profile
+                            li 
+                                a(href="#") Contact
+                .footer__rights
+                    a(href="#")  All rights reserved@2022
         script(src='index.min.js' type='module')
