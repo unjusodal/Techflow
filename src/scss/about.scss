@@ -1,0 +1,127 @@
+@import 'variables';
+
+.about-us {
+    padding-left: 0;
+    background-color: #000;
+    position: relative;
+}
+
+.about-us__frame {
+    width: 90%;
+    background-image: url('assets/images/about-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0 200px 200px 0;
+    padding: 60px 0;
+
+    .wrapper {
+        max-width: calc((1200px * 90px) / 100px); // about-us frame's width 90% => wrapper must be changed
+    }
+}
+
+.about-us__content {
+    .content__text {
+        position: relative;
+        z-index: 1;
+        width: 500px;
+
+        .title {
+            margin-bottom: 30px;
+        }
+
+        p {
+            color: $text-clr;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            width: 275px;
+        }
+    }
+
+}
+
+.content__image {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 5%;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .content__image {
+        width: 40%;
+    }
+
+    .about-us__content {
+        .content__text {
+            width: 60%;
+        }
+    
+    }
+}
+
+
+
+@media (max-width: 796px) {
+    .content__image {
+        position: static;
+        text-align: center;
+        width: 100%;
+    }
+
+    .about-us {
+        padding-left: 10px;
+        background-color: $accent-clr-2;
+    }
+
+    .about-us__frame {
+        width: 100%;
+        border-radius: none;
+        background: none;
+        padding-top: 30px;
+        padding-bottom: 0;
+    }
+
+    .about-us__content {
+        .content__text {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+            .title {
+                align-self: center;
+            }
+
+            .button {
+                align-self: center;
+                background-color: $accent-clr-2;
+                box-shadow: 0 5px 15px rgba(0, 227, 165, 0.4);
+
+                &:hover {
+                    background-color: $accent-clr;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .about-us__content {
+        .content__text {
+            .button {
+                width: 80%;
+            }
+        }
+    }
+}

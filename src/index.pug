@@ -33,7 +33,7 @@ html(lang="en")
                 .content__image
                     img(src='assets/images/header-pic.svg', alt='illustration')
         section.achievments
-            .achievments__content
+            .achievments__content.wrapper
                 .content__text
                     h4.subtitle Achievments
                     h2.title Full Decentralised and Currency Security
@@ -47,56 +47,75 @@ html(lang="en")
                     .statics__block
                         h1 20K+
                         p Build community
-                .content__image
-                    img(src='', alt='world map')
+            .achievments__image.wrapper
+                img(src='assets/images/world-map.svg', alt='world map')
         section.partners
-            .partners__content
-                h1
-                    a(href='#') coinbase
-                h1
-                    a(href='#') BLOCKCHAIN.COM
-                h1
-                    img(src='', alt='logo')
-                    a(href='#') BINANCE
-                h1
-                    img(src='', alt='logo')
-                    a(href='#') Bit<span>MEX</span>
+            .partners__content.wrapper
+                .content__coinbase
+                    a(href='https://www.coinbase.com/', target='_blank')
+                        img(src="assets/images/partners/coinbase.svg", alt="coinbase logo")
+                .content__blockchain
+                    a(href='https://www.blockchain.com/', target='_blank') 
+                        img(src="assets/images/partners/blockchain.svg", alt="blockchain logo")
+                .content__binance
+                    a(href='https://www.binance.com/en', target='_blank')
+                        img(src="assets/images/partners/binance.svg", alt="binance logo")
+                .content__bitmex
+                    a(href='https://www.bitmex.com/', target='_blank')
+                        img(src="assets/images/partners/bitmex.svg", alt="bitmex logo")
         section.about-us
-            .about-us__content
-                h2.title About us
-                p.text. 
-                    A Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-                button.button Learn More
+            .about-us__frame
+                .about-us__content.wrapper
+                    .content__text
+                        h2.title About us
+                        p 
+                            A Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printing and typesetting industry. 
+                        p
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                        button.button Learn More
+            .content__image
+                img(src='assets/images/features.png', alt='Our pluses')
         section.how-it-works
-            h2.title How Do We Work Our System and Our Journey
-            .about-us__block
-                .block__content
-                    h1.number 01
-                    .content__text
-                        h3.title Consulting
-                        p.text. 
-                            A Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                    img(src='', alt='')
-                .block__content
-                    h1.number 02
-                    .content__text
-                        h3.title Research & Complaince
-                        p.text. 
-                            A Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                    img(src='', alt='')
-                .block__content
-                    h1.number 03
-                    .content__text
-                        h3.title Technology
-                        p.text. 
-                            A Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                    img(src='', alt='')
-            button.button
+            h2.title.how-it-works__title How Do We Work Our System and Our Journey
+            .how-it-works__block
+                .block__item
+                    .item__content
+                        .content__main
+                            .num
+                                img(src='assets/images/how-it-works/01.svg', alt="01")
+                            .txt
+                                h3.title Consulting
+                                p.text. 
+                                    A Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        .content__icon
+                            img(src='assets/images/how-it-works/glyph.svg', alt='Glyph')
+                .block__item    
+                    .item__content
+                        .content__main
+                            .num
+                                img(src='assets/images/how-it-works/02.svg', alt="02")
+                            .txt
+                                h3.title Research & Complaince
+                                p.text. 
+                                    A Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        .content__icon
+                            img(src='assets/images/how-it-works/chart.svg', alt='Charts')
+                .block__item
+                    .item__content
+                        .content__main
+                            .num
+                                img(src='assets/images/how-it-works/03.svg', alt="03")
+                            .txt
+                                h3.title Technology
+                                p.text. 
+                                    A Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        .content__icon
+                            img(src='assets/images/how-it-works/technology.svg', alt='Technology')
+            button.button Let's See More
         section.reviews
             .reviews__content
                 h2.title Our community with User reviews

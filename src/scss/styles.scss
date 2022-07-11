@@ -1,12 +1,19 @@
 @import 'fonts';
 @import 'header';
 @import 'achievments';
+@import 'partners';
+@import 'about';
+@import 'how-it-works';
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #000;
 }
 
 header, 
@@ -22,12 +29,17 @@ a {
 
 .title {
     font-family: 'Poppins-Bold';
+    color: $light-clr;
 }
 
 .subtitle {
     font-family: 'Poppins-ExtraLight';
-    color: #80AB9E;
+    color: $text-clr;
     font-weight: lighter;
+}
+
+.text {
+    color: $text-clr;
 }
 
 .wrapper {
@@ -49,7 +61,7 @@ a {
     transition: all 150ms ease;
 
     &:hover {
-        background-color: #00E3A5;
+        background-color: $accent-clr;
         color: #000;
     }
 }

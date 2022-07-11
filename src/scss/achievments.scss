@@ -1,3 +1,86 @@
 .achievments {
-    background-color: rgb(13, 13, 13);
+    background-color: $bg-clr;
+    color: $light-clr;
+    background: linear-gradient($bg-clr 40%, #000);
+}
+
+.achievments__content {
+    margin-inline: auto;
+    padding-inline: 10px;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    position: relative;
+    z-index: 1;
+
+    .content__text {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 50px;
+
+        .subtitle {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.content__statics {
+    display: flex;
+    justify-content: space-between;
+}
+
+.statics__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        color: $accent-clr;
+        font-size: clamp(1rem, 3vw, 1.5rem)
+    }
+
+    p {
+        color: $grey-clr;
+        font-family: 'Poppins-ExtraLight';
+        font-size: clamp(0.4rem, 3vw, 0.8rem)
+    }
+}
+
+.achievments__image {
+    top: -4em;
+    width: 100%;
+    z-index: 0;
+    position: relative;
+
+    img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .achievments__image {
+        top: -2em;
+    }
+}
+
+@media (max-width: 550px) {
+    .achievments__image {
+        top: -1em;
+    }
+}
+
+@media (max-width: 400px) {
+    .achievments__content {
+        .content__text {
+            margin-bottom: 20px;
+            .title {
+                font-size: clamp(1rem, 3vw, 1.5rem);
+            }
+
+            .subtitle {
+                font-size: clamp(0.8rem, 3vw, 1rem);
+            }
+        }
+    }
 }
