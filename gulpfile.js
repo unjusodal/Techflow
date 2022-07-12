@@ -101,4 +101,4 @@ exports.cleanDist = cleanDist
 
 exports.default = parallel(watching, liveServer)
 
-// exports.build = series(cleanDist, build)
+exports.build = series(cleanDist, compressImgs, pugCompiler, styles, swiperJS, sideMenuJS, moveFonts)

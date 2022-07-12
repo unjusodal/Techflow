@@ -25,11 +25,7 @@
         background-color: $accent-clr;
     }
 
-    .swiper-button-prev {
-        color: $accent-clr;
-        padding-inline: 30px;
-    }
-
+    .swiper-button-prev,
     .swiper-button-next {
         color: $accent-clr;
         padding-inline: 30px;
@@ -93,10 +89,7 @@
     .swiper {
         border-radius: 0;
 
-        .swiper-button-prev {
-            display: none;
-        }
-    
+        .swiper-button-prev,
         .swiper-button-next {
             display: none;
         }
