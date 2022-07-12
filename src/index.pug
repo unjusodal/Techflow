@@ -5,6 +5,7 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         link(rel="stylesheet", href="style.min.css")
+        link(rel="stylesheet", href="https://unpkg.com/swiper@8/swiper-bundle.min.css")
         title Techflow
     body 
         header.header
@@ -17,13 +18,13 @@ html(lang="en")
                 .nav__menu
                     ul
                         li
-                            a(href='#') About us
+                            a(href='#about-us') About us
                         li
-                            a(href='#') Services
+                            a(href='#services') Services
                         li
-                            a(href='#') How it works
+                            a(href='#how-it-works') How it works
                         li
-                            a(href='#') Community
+                            a(href='#community') Community
                     button.button.nav__button Join for Free
             .header__content.wrapper
                 .content__text
@@ -49,7 +50,7 @@ html(lang="en")
                         p Build community
             .achievments__image.wrapper
                 img(src='assets/images/world-map.svg', alt='world map')
-        section.partners
+        section.partners#services
             .partners__content.wrapper
                 .content__coinbase
                     a(href='https://www.coinbase.com/', target='_blank')
@@ -63,7 +64,7 @@ html(lang="en")
                 .content__bitmex
                     a(href='https://www.bitmex.com/', target='_blank')
                         img(src="assets/images/partners/bitmex.svg", alt="bitmex logo")
-        section.about-us
+        section.about-us#about-us
             .about-us__frame
                 .about-us__content.wrapper
                     .content__text
@@ -76,7 +77,7 @@ html(lang="en")
                         button.button Learn More
             .content__image
                 img(src='assets/images/features.png', alt='Our pluses')
-        section.how-it-works
+        section.how-it-works#how-it-works
             h2.title.how-it-works__title How Do We Work Our System and Our Journey
             .how-it-works__block
                 .block__item
@@ -116,10 +117,26 @@ html(lang="en")
                         .content__icon
                             img(src='assets/images/how-it-works/technology.svg', alt='Technology')
             button.button Let's See More
-        //- section.reviews
-        //-     .reviews__content
-        //-         h2.title Our community with User reviews
-        //-         .slider
+        section.reviews#community
+            .reviews__content.wrapper
+                h2.title Our community with User reviews
+                .swiper
+                    .swiper-wrapper
+                        .swiper-slide
+                            .swiper-slide__image
+                                img(src='assets/images/people/user-2.png', alt='')
+                            .swiper-slide__text
+                                q A Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
+                                p -Dake M. Chile, Business Owner of Bellie
+                        .swiper-slide
+                            .swiper-slide__image
+                                img(src='assets/images/people/user-3.png', alt='')
+                            .swiper-slide__text
+                                q A Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
+                                p -Dake M. Chile, Business Owner of Bellie
+                    .swiper-pagination
+                    .swiper-button-prev
+                    .swiper-button-next
         footer.footer
             .footer__content.wrapper
                 .footer__company
@@ -164,4 +181,6 @@ html(lang="en")
                                 a(href="#") Contact
                 .footer__rights
                     a(href="#")  All rights reserved@2022
-        script(src='index.min.js' type='module')
+        script(src='sideMenu.min.js' type='text/javascript')
+        script(src='https://unpkg.com/swiper@8/swiper-bundle.min.js')
+        script(src='swiper.min.js' type='text/javascript')

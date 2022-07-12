@@ -27,11 +27,20 @@ function styles() {
     .pipe(browserSync.stream())
 }
 
-function scripts() {
-    return src('src/js/*.js')
+function sideMenuJS() {
+    return src('src/js/sideMenu.js')
 
     .pipe(uglify())
-    .pipe(concat('index.min.js'))
+    .pipe(concat('sideMenu.min.js'))
+    .pipe(dest('dist'))
+    .pipe(browserSync.stream())
+}
+
+function swiperJS() {
+    return src('src/js/swiper.js')
+
+    .pipe(uglify())
+    .pipe(concat('swiper.min.js'))
     .pipe(dest('dist'))
     .pipe(browserSync.stream())
 }
@@ -69,10 +78,11 @@ function liveServer() {
 }
 
 function watching() {
-    watch('src/scss/*.scss', styles),
+    watch('src/scss/**/*.scss', styles),
     watch('src/index.pug', pugCompiler),
     watch('src/index.pug').on('change', browserSync.reload),
-    watch('src/js/*.js', scripts)
+    watch('src/js/sideMenu.js', sideMenuJS),
+    watch('src/js/swiper.js', swiperJS)
 }
 
 function moveFonts() {

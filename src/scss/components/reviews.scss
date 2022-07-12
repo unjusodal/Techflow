@@ -1,0 +1,124 @@
+@import 'variables';
+
+.reviews {
+    width: 98%;
+    background-image: url('assets/images/reviews-bg-2.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0 200px 200px 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    .title {
+        text-align: center;
+        padding-bottom: 30px;
+    }
+}
+
+.swiper {
+    height: 400px;
+    background-color: $accent-clr-2;
+    border-radius: 200px;
+
+    .swiper-pagination-bullet {
+        background-color: $accent-clr;
+    }
+
+    .swiper-button-prev {
+        color: $accent-clr;
+        padding-inline: 30px;
+    }
+
+    .swiper-button-next {
+        color: $accent-clr;
+        padding-inline: 30px;
+    }
+}
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+    &__image {
+        img {
+            height: 180px;
+            width: 180px;
+            border: 3px solid $accent-clr;
+            border-radius: 100%;
+        }
+    }
+
+    &__text {
+        color: $text-clr;
+        width: 60%;
+
+        p {
+            margin-top: 40px;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .reviews {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .swiper-slide {
+        &__image {
+            img {
+                height: 140px;
+                width: 140px;
+            }
+        }
+    
+        &__text {
+            font-size: 0.9rem;
+        }
+    }
+}
+
+@media (max-width: 930px) {
+    .reviews {
+        padding-inline: 0;
+
+        .wrapper {
+            padding-inline: 0;
+        }
+    }
+
+    .swiper {
+        border-radius: 0;
+
+        .swiper-button-prev {
+            display: none;
+        }
+    
+        .swiper-button-next {
+            display: none;
+        }
+    }
+
+    .swiper-slide {
+        text-align: center;
+        flex-direction: column;
+        padding-inline: 50px;
+
+        &__text {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .swiper {
+        height: 470px;
+    }
+
+    .swiper-slide {
+        padding-inline: 20px;
+    }
+}
